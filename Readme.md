@@ -5,7 +5,15 @@
 
 additional objects are for the writer to improve software documentasion as well as use click to manage inputs
 
-it is possible to run multiple files by using a simple headerless csv
+for simple regions in single patient it is possible to give parameters
+
+paramenters
+
+    -- inputfile : a bam file
+    -- region : region, example : 1:1500-3000 important note, make sure to know if you are supposed to use Chr in front or not
+    -- outputfile : a subsetted bamfile
+
+it it is also possible to run multiple files by using a simple headerless csv
 
 ##### example of csv :
 
