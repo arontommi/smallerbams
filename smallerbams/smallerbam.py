@@ -12,10 +12,15 @@ class StClass():
 
     def runbams(self, bamfile, region, outputfile):
         """run samtools view"""
+        if str(region).endswith('.bed'):
+            region = '-L ' + region
+        else:
+            pass
         sp.call(['{}'.format(self.bashscript),
                  '{}'.format(bamfile),
                  '{}'.format(region),
                  '{}'.format(outputfile)])
+
     def runmultiple(self, csv):
         file = pd.read_csv(csv, header=None)
         for i, r in file.iterrows():
