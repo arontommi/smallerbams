@@ -10,3 +10,6 @@ it is possible to run multiple files by using a simple headerless csv
 ##### example of csv :
 
         inputfile,region,outputfile
+##### it is also possible to run bed file indstead of region :
+
+        inputfile,bedfile,outputfile
